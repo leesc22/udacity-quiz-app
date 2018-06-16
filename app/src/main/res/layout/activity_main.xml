@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:layout_marginTop="0dp"
+            android:text="@string/header_question1" />
+
+        <TextView
+            style="@style/QuestionTextStyle"
+            android:layout_marginBottom="0dp"
+            android:text="@string/question_interest" />
+
+        <EditText
+            android:id="@+id/answerEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your answer here." />
+
+        <TextView
+        style="@style/HeaderTextStyle"
+        android:text="@string/header_question2" />
+
+        <TextView
+        style="@style/QuestionTextStyle"
+        android:text="@string/question_numeracy" />
+
+        <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:text="@string/answer_numeracy_number1"
+        android:textSize="16sp"/>
+
+        <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:text="@string/answer_numeracy_number2"
+        android:textSize="16sp"/>
+
+        <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:text="@string/answer_numeracy_percent1"
+        android:textSize="16sp"/>
+
+        <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:text="@string/answer_numeracy_percent2"
+        android:textSize="16sp"/>
+
+        <TextView
+        style="@style/HeaderTextStyle"
+        android:text="@string/header_question3" />
+
+        <TextView
+        style="@style/QuestionTextStyle"
+        android:text="@string/question_compound_interest" />
+
+        <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+            <RadioButton
+            android:id="@+id/radio_compound_interest_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="@string/answer_compound_interest_more"
+            android:textSize="16sp"/>
+            <RadioButton
+            android:id="@+id/radio_compound_interest_same"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="@string/answer_compound_interest_same"
+            android:textSize="16sp"/>
+            <RadioButton
+            android:id="@+id/radio_compound_interest_less"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="@string/answer_compound_interest_less"
+            android:textSize="16sp"/>
+        </RadioGroup>
+
+        <TextView
+        style="@style/HeaderTextStyle"
+        android:text="@string/header_question4" />
+
+        <TextView
+        style="@style/QuestionTextStyle"
+        android:text="@string/question_inflation" />
+
+        <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+            <RadioButton
+            android:id="@+id/radio_inflation_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="@string/answer_inflation_more"
+            android:textSize="16sp"/>
+            <RadioButton
+            android:id="@+id/radio_inflation_same"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="@string/answer_inflation_same"
+            android:textSize="16sp"/>
+            <RadioButton
+            android:id="@+id/radio_inflation_less"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="@string/answer_inflation_less"
+            android:textSize="16sp"/>
+        </RadioGroup>
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="@string/header_question5" />
+
+        <TextView
+            style="@style/QuestionTextStyle"
+            android:text="@string/question_diversification" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <RadioButton
+                android:id="@+id/radio_diversification_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="@string/answer_diversification_one"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:id="@+id/radio_diversification_multiple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="@string/answer_diversification_multiple"
+                android:textSize="16sp"/>
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>
