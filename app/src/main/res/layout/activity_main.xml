@@ -7,10 +7,10 @@
     tools:context=".MainActivity" >
 
     <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="16dp">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
 
         <TextView
             style="@style/HeaderTextStyle"
@@ -23,115 +23,120 @@
             android:text="@string/question_interest" />
 
         <EditText
-            android:id="@+id/answerEditText"
+            android:id="@+id/answer_interest_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter your answer here." />
+            android:inputType="number"
+            android:hint="@string/answer_interest" />
 
         <TextView
-        style="@style/HeaderTextStyle"
-        android:text="@string/header_question2" />
+            style="@style/HeaderTextStyle"
+            android:text="@string/header_question2" />
 
         <TextView
-        style="@style/QuestionTextStyle"
-        android:text="@string/question_numeracy" />
+            style="@style/QuestionTextStyle"
+            android:text="@string/question_numeracy" />
 
         <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="24dp"
-        android:text="@string/answer_numeracy_number1"
-        android:textSize="16sp"/>
+            android:id="@+id/checkbox_answer_numeracy_number1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="@string/answer_numeracy_number1"
+            android:textSize="16sp"/>
 
         <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="24dp"
-        android:text="@string/answer_numeracy_number2"
-        android:textSize="16sp"/>
+            android:id="@+id/checkbox_answer_numeracy_number2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="@string/answer_numeracy_number2"
+            android:textSize="16sp"/>
 
         <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="24dp"
-        android:text="@string/answer_numeracy_percent1"
-        android:textSize="16sp"/>
+            android:id="@+id/checkbox_answer_numeracy_percent1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="@string/answer_numeracy_percent1"
+            android:textSize="16sp"/>
 
         <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="24dp"
-        android:text="@string/answer_numeracy_percent2"
-        android:textSize="16sp"/>
+            android:id="@+id/checkbox_answer_numeracy_percent2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="@string/answer_numeracy_percent2"
+            android:textSize="16sp"/>
 
         <TextView
-        style="@style/HeaderTextStyle"
-        android:text="@string/header_question3" />
+            style="@style/HeaderTextStyle"
+            android:text="@string/header_question3" />
 
         <TextView
-        style="@style/QuestionTextStyle"
-        android:text="@string/question_compound_interest" />
+            style="@style/QuestionTextStyle"
+            android:text="@string/question_compound_interest" />
 
         <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" >
-            <RadioButton
-            android:id="@+id/radio_compound_interest_more"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="@string/answer_compound_interest_more"
-            android:textSize="16sp"/>
+            android:orientation="vertical" >
             <RadioButton
-            android:id="@+id/radio_compound_interest_same"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="@string/answer_compound_interest_same"
-            android:textSize="16sp"/>
+                android:id="@+id/radio_compound_interest_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="@string/answer_compound_interest_more"
+                android:textSize="16sp"/>
             <RadioButton
-            android:id="@+id/radio_compound_interest_less"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="@string/answer_compound_interest_less"
-            android:textSize="16sp"/>
+                android:id="@+id/radio_compound_interest_same"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="@string/answer_compound_interest_same"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:id="@+id/radio_compound_interest_less"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="@string/answer_compound_interest_less"
+                android:textSize="16sp"/>
         </RadioGroup>
 
         <TextView
-        style="@style/HeaderTextStyle"
-        android:text="@string/header_question4" />
+            style="@style/HeaderTextStyle"
+            android:text="@string/header_question4" />
 
         <TextView
-        style="@style/QuestionTextStyle"
-        android:text="@string/question_inflation" />
+            style="@style/QuestionTextStyle"
+            android:text="@string/question_inflation" />
 
         <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" >
-            <RadioButton
-            android:id="@+id/radio_inflation_more"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="@string/answer_inflation_more"
-            android:textSize="16sp"/>
+            android:orientation="vertical" >
             <RadioButton
-            android:id="@+id/radio_inflation_same"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="@string/answer_inflation_same"
-            android:textSize="16sp"/>
+                android:id="@+id/radio_inflation_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="@string/answer_inflation_more"
+                android:textSize="16sp"/>
             <RadioButton
-            android:id="@+id/radio_inflation_less"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="@string/answer_inflation_less"
-            android:textSize="16sp"/>
+                android:id="@+id/radio_inflation_same"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="@string/answer_inflation_same"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:id="@+id/radio_inflation_less"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="@string/answer_inflation_less"
+                android:textSize="16sp"/>
         </RadioGroup>
 
         <TextView
@@ -161,5 +166,12 @@
                 android:text="@string/answer_diversification_multiple"
                 android:textSize="16sp"/>
         </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="submitQuiz"
+            android:text="@string/submit"/>
     </LinearLayout>
 </ScrollView>

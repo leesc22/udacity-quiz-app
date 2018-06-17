@@ -7,6 +7,7 @@
     <string name="header_question5">Question 5</string>
 
     <string name="question_interest">Suppose you had $100 in a savings account and the interest rate was 2 percent per year. How much money would you have in the account at the end of first year?</string>
+    <string name="answer_interest">Enter your answer here.</string>
 
     <string name="question_numeracy">Suppose you need to borrow $100. Which of the following(s) is the lower amount to pay back?</string>
     <string name="answer_numeracy_number1">$105</string>
@@ -27,4 +28,6 @@
     <string name="question_diversification">Suppose you have some money. Is it safer to put your money into one business or investment, or to put your money into multiple businesses or investments?</string>
     <string name="answer_diversification_one">One business or investment</string>
     <string name="answer_diversification_multiple">Multiple businesses or investments</string>
+
+    <string name="submit">Submit</string>
 </resources>
