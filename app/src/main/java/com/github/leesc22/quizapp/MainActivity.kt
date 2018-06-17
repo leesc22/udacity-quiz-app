@@ -6,6 +6,9 @@ import android.view.View
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
+/*
+ * This app display the quiz on financial literacy
+ */
 class MainActivity : AppCompatActivity() {
     private val quizCount:Int = 5
     private var correctCount:Int = 0
@@ -15,10 +18,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
+    /*
+     * This method is called when the submit button is clicked
+     */
     fun submitQuiz(view: View) {
         checkAllAnswer()
 
-        Toast.makeText(this, "You got $correctCount out of $quizCount right!", Toast.LENGTH_SHORT).show()
+        // Show results of the quiz as a toast
+        Toast.makeText(this, getString(R.string.results, correctCount, quizCount), Toast.LENGTH_SHORT).show()
 
         resetCorrectCount()
     }

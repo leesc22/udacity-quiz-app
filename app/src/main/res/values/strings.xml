@@ -1,33 +1,50 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Title for the application -->
     <string name="app_name">Quiz App</string>
+
+    <!-- Header text for the questions -->
     <string name="header_question1">Question 1</string>
     <string name="header_question2">Question 2</string>
     <string name="header_question3">Question 3</string>
     <string name="header_question4">Question 4</string>
     <string name="header_question5">Question 5</string>
 
+    <!-- Text for the question on interest -->
     <string name="question_interest">Suppose you had $100 in a savings account and the interest rate was 2 percent per year. How much money would you have in the account at the end of first year?</string>
+    <!-- Hint text for the EditText view -->
     <string name="answer_interest">Enter your answer here.</string>
 
+    <!-- Text for the question on numeracy -->
     <string name="question_numeracy">Suppose you need to borrow $100. Which of the following(s) is the lower amount to pay back?</string>
+    <!-- Checkbox text for the answers on numeracy -->
     <string name="answer_numeracy_number1">$105</string>
     <string name="answer_numeracy_number2">$103</string>
     <string name="answer_numeracy_percent1">$100 plus 5 percent</string>
     <string name="answer_numeracy_percent2">$100 plus 3 percent</string>
 
+    <!-- Text for the question on compound interest -->
     <string name="question_compound_interest">Suppose you had $100 in a savings account and the interest rate was 2 percent per year.  How much money would you have in the account after five years if you did not remove any money from the account?</string>
+    <!-- Radio text for the answers on compound interest -->
     <string name="answer_compound_interest_more">More than $110</string>
     <string name="answer_compound_interest_same">Exactly $110</string>
     <string name="answer_compound_interest_less">Less than $110</string>
 
+    <!-- Text for the question on inflation -->
     <string name="question_inflation">Imagine that the interest rate on your savings account was 1 percent per year and inflation was 2 percent per year. After 1 year, how much would you be able to buy with the money in this account?</string>
+    <!-- Radio text for the answers on inflation -->
     <string name="answer_inflation_more">More than today</string>
     <string name="answer_inflation_same">Exactly the same as today</string>
     <string name="answer_inflation_less">Less than today</string>
 
+    <!-- Text for the question on diversification -->
     <string name="question_diversification">Suppose you have some money. Is it safer to put your money into one business or investment, or to put your money into multiple businesses or investments?</string>
+    <!-- Radio text for the answers on diversification -->
     <string name="answer_diversification_one">One business or investment</string>
     <string name="answer_diversification_multiple">Multiple businesses or investments</string>
 
+    <!-- Text for the submit button -->
     <string name="submit">Submit</string>
+
+    <!-- Toast message for results of the quiz -->
+    <string name="results">You got <xliff:g id="correctCount" example="2">%d</xliff:g> out of <xliff:g id="quizCount" example="5">%d</xliff:g> right!</string>
 </resources>
